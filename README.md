@@ -1,4 +1,12 @@
-## 👋 Hi, I'm Swaraj Satapathy
+<h1 align="center">👋 Hi, I'm Swaraj Satapathy</h1>
+
+<p align="center">
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=26&duration=3000&pause=1000&color=FF0000&center=true&vCenter=true&width=600&lines=B.Tech+Computer+Science+Student;Future+Software+Developer;Open+Source+Enthusiast;Never+Stop+Learning+🚀" />
+</p>
+
+<p align="center">
+<img src="https://media.giphy.com/media/tuCFp8rod0x3O/giphy.gif" width="250">
+</p>
 
 🎓 B.Tech Computer Science student at Government College of Engineering, Kalahandi
 💻 Passionate about Software Development, Problem Solving, and Open Source  
