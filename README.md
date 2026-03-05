@@ -1,11 +1,11 @@
 <h1 align="center">👋 Hi, I'm Swaraj Satapathy</h1>
 
 <p align="center">
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=26&duration=3000&pause=1000&color=FF0000&center=true&vCenter=true&width=600&lines=B.Tech+Computer+Science+Student;Future+Software+Developer;Open+Source+Enthusiast;Never+Stop+Learning+🚀" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=2500&pause=800&color=FF4500&center=true&vCenter=true&width=700&lines=Computer+Science+Student;Software+Developer+in+Progress;Building+Real+World+Projects;Future+Open+Source+Contributor;Keep+Coding+🚀" />
 </p>
 
 <p align="center">
-<img src="https://media.giphy.com/media/tuCFp8rod0x3O/giphy.gif" width="250">
+<img src="https://media.giphy.com/media/4OV1bLOIWwIXRxpXlN/giphy.gif" width="280">
 </p>
 
 🎓 B.Tech Computer Science student at Government College of Engineering, Kalahandi
