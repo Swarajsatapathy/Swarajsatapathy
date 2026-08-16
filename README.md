@@ -14,20 +14,15 @@
 </p>
 
 <p align="center">
-  <a href="YOUR_PORTFOLIO">
-    <img src="https://img.shields.io/badge/PORTFOLIO-0D1117?style=for-the-badge&logo=vercel&logoColor=white" />
-  </a>
-
   <a href="https://www.linkedin.com/in/swaraj-satapathy-b97790337/">
-    <img src="https://img.shields.io/badge/LINKEDIN-0D1117?style=for-the-badge&logo=linkedin&logoColor=white" />
+    <img src="https://img.shields.io/badge/LINKEDIN-0D1117?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
 
   <a href="mailto:swarajsatapathy.rkl@gmail.com">
-    <img src="https://img.shields.io/badge/EMAIL-0D1117?style=for-the-badge&logo=gmail&logoColor=white" />
+    <img src="https://img.shields.io/badge/EMAIL-0D1117?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
   </a>
 </p>
 
-````markdown
 ---
 
 ## About Me
@@ -39,8 +34,7 @@ Focus       : Web Development & Cloud
 Location    : Odisha, India
 ```
 
-I enjoy building applications that solve practical problems while
-learning how modern web applications are designed, deployed and scaled.
+I enjoy building applications that solve practical problems while learning how modern web applications are designed, deployed and scaled.
 
 ### Currently focusing on
 
@@ -61,34 +55,32 @@ learning how modern web applications are designed, deployed and scaled.
 ### Languages
 
 <p>
-  <img src="https://skillicons.dev/icons?i=java,cpp,c,python,js,ts" />
+  <img src="https://skillicons.dev/icons?i=java,cpp,c,python,js,ts" alt="Programming Languages" />
 </p>
 
 ### Frontend
 
 <p>
-  <img src="https://skillicons.dev/icons?i=html,css,react,nextjs,tailwind" />
+  <img src="https://skillicons.dev/icons?i=html,css,react,nextjs,tailwind" alt="Frontend Technologies" />
 </p>
 
 ### Backend
 
 <p>
-  <img src="https://skillicons.dev/icons?i=nodejs,express" />
+  <img src="https://skillicons.dev/icons?i=nodejs,express" alt="Backend Technologies" />
 </p>
 
 ### Databases
 
 <p>
-  <img src="https://skillicons.dev/icons?i=mongodb,mysql" />
+  <img src="https://skillicons.dev/icons?i=mongodb,mysql" alt="Databases" />
 </p>
 
 ### Cloud & DevOps
 
 <p>
-  <img src="https://skillicons.dev/icons?i=aws,docker,linux,git,github" />
+  <img src="https://skillicons.dev/icons?i=aws,docker,linux,git,github" alt="Cloud and DevOps" />
 </p>
-
----
 
 ---
 
@@ -97,82 +89,82 @@ learning how modern web applications are designed, deployed and scaled.
 <table>
   <tr>
     <td width="33%" valign="top">
-      <h3 align="center">Political Khati</h3>
 
-      <p>
-        A modern digital news platform for publishing web news and video news
-        with a complete administration system.
-      </p>
+<h3 align="center">Political Khati</h3>
 
-      <p><strong>Tech Stack</strong></p>
+<p>
+A modern digital news platform for publishing web news and video news with a complete administration system.
+</p>
 
-      <p>
-        <code>Next.js</code>
-        <code>TypeScript</code>
-        <code>Node.js</code>
-        <code>MongoDB</code>
-        <code>AWS</code>
-      </p>
+<p><strong>Tech Stack</strong></p>
 
-      <p align="center">
-        <a href="https://github.com/Swarajsatapathy/Political-Khati">
-          <b>View Repository →</b>
-        </a>
-      </p>
-    </td>
+<p>
+<code>Next.js</code>
+<code>TypeScript</code>
+<code>Node.js</code>
+<code>MongoDB</code>
+<code>AWS</code>
+</p>
 
-    <td width="33%" valign="top">
-      <h3 align="center">Odisha Digital Media Mahasangha</h3>
+<p align="center">
+<a href="https://github.com/Swarajsatapathy/Political-Khati">
+<b>View Repository →</b>
+</a>
+</p>
 
-      <p>
-        A digital media organization platform with member management,
-        news publishing, gallery, ID cards and administration tools.
-      </p>
+</td>
 
-      <p><strong>Tech Stack</strong></p>
+<td width="33%" valign="top">
 
-      <p>
-        <code>Next.js</code>
-        <code>Node.js</code>
-        <code>MongoDB</code>
-        <code>AWS</code>
-      </p>
+<h3 align="center">Odisha Digital Media Mahasangha</h3>
 
-      <p align="center">
-        <a href="https://github.com/Swarajsatapathy/MediaMahasangha">
-          <b>View Repository →</b>
-        </a>
-      </p>
-    </td>
+<p>
+A digital media organization platform with member management, news publishing, gallery, ID cards and administration tools.
+</p>
 
-    <td width="33%" valign="top">
-      <h3 align="center">Srishti News</h3>
+<p><strong>Tech Stack</strong></p>
 
-      <p>
-        A full-stack digital news platform with article publishing,
-        video news, reporter management and cloud infrastructure.
-      </p>
+<p>
+<code>Next.js</code>
+<code>Node.js</code>
+<code>MongoDB</code>
+<code>AWS</code>
+</p>
 
-      <p><strong>Tech Stack</strong></p>
+<p align="center">
+<a href="https://github.com/Swarajsatapathy/MediaMahasangha">
+<b>View Repository →</b>
+</a>
+</p>
 
-      <p>
-        <code>Next.js</code>
-        <code>TypeScript</code>
-        <code>MongoDB</code>
-        <code>AWS</code>
-      </p>
+</td>
 
-      <p align="center">
-        <a href="https://github.com/Swarajsatapathy/srishti">
-          <b>View Repository →</b>
-        </a>
-      </p>
-    </td>
+<td width="33%" valign="top">
 
+<h3 align="center">Srishti News</h3>
+
+<p>
+A full-stack digital news platform with article publishing, video news, reporter management and cloud infrastructure.
+</p>
+
+<p><strong>Tech Stack</strong></p>
+
+<p>
+<code>Next.js</code>
+<code>TypeScript</code>
+<code>MongoDB</code>
+<code>AWS</code>
+</p>
+
+<p align="center">
+<a href="https://github.com/Swarajsatapathy/srishti">
+<b>View Repository →</b>
+</a>
+</p>
+
+</td>
   </tr>
 </table>
-
----
 
 ---
 
@@ -185,12 +177,11 @@ learning how modern web applications are designed, deployed and scaled.
     alt="Swaraj's GitHub Stats"
   />
 
-<img
+  <img
     width="49%"
     src="https://github-stats-extended.vercel.app/api/top-langs/?username=Swarajsatapathy&layout=compact&theme=github_dark&hide_border=true"
     alt="Swaraj's Most Used Languages"
   />
-
 </p>
 
 <p align="center">
@@ -213,9 +204,7 @@ System Design         ███████████░░░░░░░░�
 DSA                   █████████████░░░░░░░
 ```
 
-I am particularly interested in understanding how applications move
-from an idea to a production system — frontend, backend, databases,
-deployment and cloud infrastructure.
+I am particularly interested in understanding how applications move from an idea to a production system — frontend, backend, databases, deployment and cloud infrastructure.
 
 ---
 
@@ -231,26 +220,20 @@ When I'm not working on projects, I'm usually:
 
 ---
 
----
-
 ## Connect With Me
 
 <p align="center">
 
   <a href="https://github.com/Swarajsatapathy">
-    <img src="https://img.shields.io/badge/GITHUB-0D1117?style=for-the-badge&logo=github&logoColor=white" />
+    <img src="https://img.shields.io/badge/GITHUB-0D1117?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
   </a>
 
   <a href="https://www.linkedin.com/in/swaraj-satapathy-b97790337/">
-    <img src="https://img.shields.io/badge/LINKEDIN-0D1117?style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>
-
-  <a href="YOUR_PORTFOLIO_URL">
-    <img src="https://img.shields.io/badge/PORTFOLIO-0D1117?style=for-the-badge&logo=vercel&logoColor=white" />
+    <img src="https://img.shields.io/badge/LINKEDIN-0D1117?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
 
   <a href="mailto:swarajsatapathy.rkl@gmail.com">
-    <img src="https://img.shields.io/badge/EMAIL-0D1117?style=for-the-badge&logo=gmail&logoColor=white" />
+    <img src="https://img.shields.io/badge/EMAIL-0D1117?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
   </a>
 
 </p>
@@ -260,4 +243,3 @@ When I'm not working on projects, I'm usually:
 <p align="center">
   <i>Build • Learn • Improve • Repeat</i>
 </p>
-````
