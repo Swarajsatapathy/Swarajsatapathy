@@ -173,13 +173,12 @@ A full-stack digital news platform with article publishing, video news, reporter
 <p align="center">
   <img
     width="49%"
-    src="./assets/activity-streak.svg"
+    src="https://raw.githubusercontent.com/Swarajsatapathy/Swarajsatapathy/main/assets/activity-streak.svg?v=2"
     alt="Swaraj's Streak and Contributions"
   />
-
   <img
     width="49%"
-    src="./assets/activity-github.svg"
+    src="https://raw.githubusercontent.com/Swarajsatapathy/Swarajsatapathy/main/assets/activity-github.svg?v=2"
     alt="Swaraj's GitHub Statistics"
   />
 </p>

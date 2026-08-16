@@ -322,7 +322,7 @@ function makeCard(title, metrics) {
 /* -------------------------------------------------- */
 
 const streakCard = makeCard(
-  "Streak & Contributions",
+  "Streak &amp; Contributions",
   [
     {
       icon: "●",
