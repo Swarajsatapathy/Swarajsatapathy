@@ -168,26 +168,38 @@ A full-stack digital news platform with article publishing, video news, reporter
 
 ---
 
-## GitHub Statistics
+## Activity
 
 <p align="center">
   <img
     width="49%"
-    src="https://github-stats-extended.vercel.app/api?username=Swarajsatapathy&show_icons=true&theme=github_dark&hide_border=true"
+    src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Swarajsatapathy&theme=github_dark&bg_color=000000&title_color=ffffff&text_color=c9d1d9&icon_color=ffffff&border_color=30363d&animation=load"
     alt="Swaraj's GitHub Stats"
   />
 
   <img
     width="49%"
-    src="https://github-stats-extended.vercel.app/api/top-langs/?username=Swarajsatapathy&layout=compact&theme=github_dark&hide_border=true"
-    alt="Swaraj's Most Used Languages"
+    src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Swarajsatapathy&theme=github_dark&bg_color=000000&title_color=ffffff&text_color=c9d1d9&border_color=30363d&chart_color=58a6ff&animation=load"
+    alt="Swaraj's Languages"
   />
 </p>
+
+<br>
+
+<p align="center">
+  <img
+    width="100%"
+    src="https://github-readme-activity-graph.vercel.app/graph?username=Swarajsatapathy&bg_color=000000&color=c9d1d9&title_color=ffffff&line=58a6ff&point=ffffff&area_color=58a6ff&area=true&hide_border=true&custom_title=Swaraj%20Satapathy%27s%20Contribution%20Graph"
+    alt="Swaraj Satapathy Contribution Graph"
+  />
+</p>
+
+<br>
 
 <p align="center">
   <img
     width="70%"
-    src="https://streak-stats.demolab.com?user=Swarajsatapathy&theme=github-dark-blue&hide_border=true"
+    src="https://streak-stats.demolab.com?user=Swarajsatapathy&theme=transparent&hide_border=true&ring=58A6FF&fire=58A6FF&currStreakLabel=FFFFFF&sideLabels=C9D1D9&dates=8B949E&currStreakNum=FFFFFF&sideNums=FFFFFF"
     alt="Swaraj's GitHub Streak"
   />
 </p>
