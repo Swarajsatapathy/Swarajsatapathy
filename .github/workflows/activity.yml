@@ -29,19 +29,18 @@ jobs:
           node-version: 24
           package-manager-cache: false
 
-      - name: Generate activity cards
+      - name: Generate activity dashboard
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_USERNAME: Swarajsatapathy
         run: node scripts/generate-activity.mjs
 
-      - name: Commit updated cards
+      - name: Commit updated dashboard
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add assets/activity-streak.svg
-          git add assets/activity-github.svg
+          git add assets/activity-overview.svg
 
           if git diff --cached --quiet; then
             echo "No stats changed."

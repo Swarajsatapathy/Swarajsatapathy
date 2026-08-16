@@ -1,6 +1,8 @@
 import fs from "node:fs/promises";
 
-const username = process.env.GITHUB_USERNAME || "Swarajsatapathy";
+const username =
+  process.env.GITHUB_USERNAME || "Swarajsatapathy";
+
 const token = process.env.GH_TOKEN;
 
 if (!token) {
@@ -10,7 +12,9 @@ if (!token) {
 const now = new Date();
 const oneYearAgo = new Date(now);
 
-oneYearAgo.setUTCFullYear(oneYearAgo.getUTCFullYear() - 1);
+oneYearAgo.setUTCFullYear(
+  oneYearAgo.getUTCFullYear() - 1
+);
 
 const query = `
   query UserActivity(
@@ -53,25 +57,28 @@ const query = `
   }
 `;
 
-const response = await fetch("https://api.github.com/graphql", {
-  method: "POST",
+const response = await fetch(
+  "https://api.github.com/graphql",
+  {
+    method: "POST",
 
-  headers: {
-    Authorization: `Bearer ${token}`,
-    "Content-Type": "application/json",
-    "User-Agent": "github-profile-activity",
-  },
-
-  body: JSON.stringify({
-    query,
-
-    variables: {
-      login: username,
-      from: oneYearAgo.toISOString(),
-      to: now.toISOString(),
+    headers: {
+      Authorization: `Bearer ${token}`,
+      "Content-Type": "application/json",
+      "User-Agent": "github-profile-activity",
     },
-  }),
-});
+
+    body: JSON.stringify({
+      query,
+
+      variables: {
+        login: username,
+        from: oneYearAgo.toISOString(),
+        to: now.toISOString(),
+      },
+    }),
+  }
+);
 
 if (!response.ok) {
   throw new Error(
@@ -90,17 +97,21 @@ if (json.errors) {
 const user = json.data.user;
 
 if (!user) {
-  throw new Error(`GitHub user "${username}" was not found.`);
+  throw new Error(
+    `GitHub user "${username}" was not found.`
+  );
 }
 
 /* -------------------------------------------------- */
 /* GitHub stats                                       */
 /* -------------------------------------------------- */
 
-const repositories = user.repositories.nodes ?? [];
+const repositories =
+  user.repositories.nodes ?? [];
 
 const totalStars = repositories.reduce(
-  (total, repo) => total + repo.stargazerCount,
+  (total, repo) =>
+    total + repo.stargazerCount,
   0
 );
 
@@ -108,10 +119,12 @@ const repositoryCount =
   user.repositories.totalCount;
 
 const totalCommits =
-  user.contributionsCollection.totalCommitContributions;
+  user.contributionsCollection
+    .totalCommitContributions;
 
 const calendar =
-  user.contributionsCollection.contributionCalendar;
+  user.contributionsCollection
+    .contributionCalendar;
 
 const totalContributions =
   calendar.totalContributions;
@@ -122,7 +135,9 @@ const totalContributions =
 
 const contributionDays =
   calendar.weeks
-    .flatMap((week) => week.contributionDays)
+    .flatMap(
+      (week) => week.contributionDays
+    )
     .sort((a, b) =>
       a.date.localeCompare(b.date)
     );
@@ -134,7 +149,11 @@ function calculateStreaks(days) {
   for (const day of days) {
     if (day.contributionCount > 0) {
       running += 1;
-      longest = Math.max(longest, running);
+
+      longest = Math.max(
+        longest,
+        running
+      );
     } else {
       running = 0;
     }
@@ -143,11 +162,13 @@ function calculateStreaks(days) {
   let index = days.length - 1;
 
   const today =
-    new Date().toISOString().slice(0, 10);
+    new Date()
+      .toISOString()
+      .slice(0, 10);
 
   /*
-   * Don't destroy the current streak simply because
-   * today's contribution count is still zero.
+   * Don't kill the streak simply because
+   * today's contribution is still zero.
    */
   if (
     days[index]?.date === today &&
@@ -175,71 +196,23 @@ function calculateStreaks(days) {
 const {
   current: currentStreak,
   longest: longestStreak,
-} = calculateStreaks(contributionDays);
+} = calculateStreaks(
+  contributionDays
+);
 
 /* -------------------------------------------------- */
-/* SVG                                                */
+/* Combined dashboard SVG                             */
 /* -------------------------------------------------- */
 
-function makeCard(title, metrics) {
-  const width = 520;
-  const height = 118;
-
-  const positions = [
-    100,
-    260,
-    420,
-  ];
-
-  const metricSvg = metrics
-    .map((metric, index) => {
-      const x = positions[index];
-
-      return `
-        <g transform="translate(${x}, 0)">
-
-          <text
-            x="0"
-            y="53"
-            text-anchor="middle"
-            class="icon"
-          >
-            ${metric.icon}
-          </text>
-
-          <text
-            x="0"
-            y="76"
-            text-anchor="middle"
-            class="value"
-          >
-            ${metric.value}
-          </text>
-
-          <text
-            x="0"
-            y="95"
-            text-anchor="middle"
-            class="label"
-          >
-            ${metric.label}
-          </text>
-
-        </g>
-      `;
-    })
-    .join("");
-
+function makeOverviewCard() {
   return `
 <svg
   xmlns="http://www.w3.org/2000/svg"
-  width="${width}"
-  height="${height}"
-  viewBox="0 0 ${width} ${height}"
+  width="1080"
+  height="130"
+  viewBox="0 0 1080 130"
 >
-
   <style>
-
     .title {
       font-family:
         -apple-system,
@@ -263,7 +236,7 @@ function makeCard(title, metrics) {
         Arial,
         sans-serif;
 
-      font-size: 14px;
+      font-size: 15px;
       fill: #ffffff;
     }
 
@@ -276,7 +249,7 @@ function makeCard(title, metrics) {
         Arial,
         sans-serif;
 
-      font-size: 18px;
+      font-size: 20px;
       font-weight: 700;
       fill: #ffffff;
     }
@@ -293,101 +266,245 @@ function makeCard(title, metrics) {
       font-size: 10px;
       fill: #8b949e;
     }
-
   </style>
 
+  <!-- LEFT -->
   <rect
-    width="520"
-    height="118"
-    rx="3"
+    x="0"
+    y="0"
+    width="530"
+    height="125"
+    rx="2"
     fill="#000000"
   />
 
   <text
-    x="18"
-    y="25"
+    x="20"
+    y="27"
     class="title"
   >
-    ${title}
+    Streak &amp; Contributions
   </text>
 
-  ${metricSvg}
+  <g transform="translate(105,0)">
+    <text
+      x="0"
+      y="57"
+      text-anchor="middle"
+      class="icon"
+    >
+      ●
+    </text>
+
+    <text
+      x="0"
+      y="81"
+      text-anchor="middle"
+      class="value"
+    >
+      ${currentStreak}
+    </text>
+
+    <text
+      x="0"
+      y="103"
+      text-anchor="middle"
+      class="label"
+    >
+      Current Streak
+    </text>
+  </g>
+
+  <g transform="translate(265,0)">
+    <text
+      x="0"
+      y="57"
+      text-anchor="middle"
+      class="icon"
+    >
+      ◆
+    </text>
+
+    <text
+      x="0"
+      y="81"
+      text-anchor="middle"
+      class="value"
+    >
+      ${longestStreak}
+    </text>
+
+    <text
+      x="0"
+      y="103"
+      text-anchor="middle"
+      class="label"
+    >
+      Longest Streak
+    </text>
+  </g>
+
+  <g transform="translate(425,0)">
+    <text
+      x="0"
+      y="57"
+      text-anchor="middle"
+      class="icon"
+    >
+      ⌁
+    </text>
+
+    <text
+      x="0"
+      y="81"
+      text-anchor="middle"
+      class="value"
+    >
+      ${totalContributions}
+    </text>
+
+    <text
+      x="0"
+      y="103"
+      text-anchor="middle"
+      class="label"
+    >
+      Contributions
+    </text>
+  </g>
+
+  <!-- RIGHT -->
+  <rect
+    x="550"
+    y="0"
+    width="530"
+    height="125"
+    rx="2"
+    fill="#000000"
+  />
+
+  <text
+    x="570"
+    y="27"
+    class="title"
+  >
+    GitHub Stats
+  </text>
+
+  <g transform="translate(655,0)">
+    <text
+      x="0"
+      y="57"
+      text-anchor="middle"
+      class="icon"
+    >
+      ★
+    </text>
+
+    <text
+      x="0"
+      y="81"
+      text-anchor="middle"
+      class="value"
+    >
+      ${totalStars}
+    </text>
+
+    <text
+      x="0"
+      y="103"
+      text-anchor="middle"
+      class="label"
+    >
+      Stars
+    </text>
+  </g>
+
+  <g transform="translate(815,0)">
+    <text
+      x="0"
+      y="57"
+      text-anchor="middle"
+      class="icon"
+    >
+      ⌁
+    </text>
+
+    <text
+      x="0"
+      y="81"
+      text-anchor="middle"
+      class="value"
+    >
+      ${totalCommits}
+    </text>
+
+    <text
+      x="0"
+      y="103"
+      text-anchor="middle"
+      class="label"
+    >
+      Commits
+    </text>
+  </g>
+
+  <g transform="translate(975,0)">
+    <text
+      x="0"
+      y="57"
+      text-anchor="middle"
+      class="icon"
+    >
+      ▣
+    </text>
+
+    <text
+      x="0"
+      y="81"
+      text-anchor="middle"
+      class="value"
+    >
+      ${repositoryCount}
+    </text>
+
+    <text
+      x="0"
+      y="103"
+      text-anchor="middle"
+      class="label"
+    >
+      Repositories
+    </text>
+  </g>
 
 </svg>
 `;
 }
 
-/* -------------------------------------------------- */
-/* Card 1                                             */
-/* -------------------------------------------------- */
-
-const streakCard = makeCard(
-  "Streak &amp; Contributions",
-  [
-    {
-      icon: "●",
-      value: currentStreak,
-      label: "Current Streak",
-    },
-    {
-      icon: "◆",
-      value: longestStreak,
-      label: "Longest Streak",
-    },
-    {
-      icon: "⌁",
-      value: totalContributions,
-      label: "Contributions",
-    },
-  ]
-);
+const overviewCard =
+  makeOverviewCard();
 
 /* -------------------------------------------------- */
-/* Card 2                                             */
+/* Write output                                       */
 /* -------------------------------------------------- */
 
-const githubCard = makeCard(
-  "GitHub Stats",
-  [
-    {
-      icon: "★",
-      value: totalStars,
-      label: "Stars",
-    },
-    {
-      icon: "⌁",
-      value: totalCommits,
-      label: "Commits",
-    },
-    {
-      icon: "▣",
-      value: repositoryCount,
-      label: "Repositories",
-    },
-  ]
-);
-
-/* -------------------------------------------------- */
-/* Write files                                        */
-/* -------------------------------------------------- */
-
-await fs.mkdir("assets", {
-  recursive: true,
-});
-
-await fs.writeFile(
-  "assets/activity-streak.svg",
-  streakCard,
-  "utf8"
+await fs.mkdir(
+  "assets",
+  {
+    recursive: true,
+  }
 );
 
 await fs.writeFile(
-  "assets/activity-github.svg",
-  githubCard,
+  "assets/activity-overview.svg",
+  overviewCard,
   "utf8"
 );
 
-console.log("Activity cards generated.");
+console.log(
+  "Activity overview generated."
+);
 
 console.log({
   currentStreak,
