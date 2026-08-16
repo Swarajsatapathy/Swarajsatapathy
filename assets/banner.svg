@@ -1,0 +1,85 @@
+<svg
+  width="1200"
+  height="350"
+  viewBox="0 0 1200 350"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <rect width="1200" height="350" fill="#0D1117"/>
+
+  <!-- subtle grid -->
+  <g opacity="0.08" stroke="#FFFFFF">
+    <path d="M0 70H1200"/>
+    <path d="M0 140H1200"/>
+    <path d="M0 210H1200"/>
+    <path d="M0 280H1200"/>
+
+    <path d="M150 0V350"/>
+    <path d="M300 0V350"/>
+    <path d="M450 0V350"/>
+    <path d="M600 0V350"/>
+    <path d="M750 0V350"/>
+    <path d="M900 0V350"/>
+    <path d="M1050 0V350"/>
+  </g>
+
+  <!-- decorative line -->
+  <line
+    x1="170"
+    y1="95"
+    x2="1030"
+    y2="95"
+    stroke="#30363D"
+    stroke-width="2"
+  />
+
+  <!-- Japanese welcome -->
+  <text
+    x="600"
+    y="75"
+    text-anchor="middle"
+    fill="#8B949E"
+    font-family="Segoe UI, Arial, sans-serif"
+    font-size="22"
+    letter-spacing="4"
+  >
+    ようこそ
+  </text>
+
+  <!-- Name -->
+  <text
+    x="600"
+    y="180"
+    text-anchor="middle"
+    fill="#FFFFFF"
+    font-family="Segoe UI, Arial, sans-serif"
+    font-size="58"
+    font-weight="700"
+    letter-spacing="5"
+  >
+    SWARAJ SATAPATHY
+  </text>
+
+  <!-- Subtitle -->
+  <text
+    x="600"
+    y="230"
+    text-anchor="middle"
+    fill="#8B949E"
+    font-family="Segoe UI, Arial, sans-serif"
+    font-size="22"
+    letter-spacing="3"
+  >
+    COMPUTER SCIENCE • WEB DEVELOPMENT • CLOUD
+  </text>
+
+  <!-- bottom accent -->
+  <rect
+    x="515"
+    y="280"
+    width="170"
+    height="3"
+    rx="1.5"
+    fill="#58A6FF"
+  />
+</svg>
