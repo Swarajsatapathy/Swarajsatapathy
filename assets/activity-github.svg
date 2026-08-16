@@ -1,0 +1,177 @@
+
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="520"
+  height="118"
+  viewBox="0 0 520 118"
+>
+
+  <style>
+
+    .title {
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Helvetica,
+        Arial,
+        sans-serif;
+
+      font-size: 14px;
+      font-weight: 700;
+      fill: #ffffff;
+    }
+
+    .icon {
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Helvetica,
+        Arial,
+        sans-serif;
+
+      font-size: 14px;
+      fill: #ffffff;
+    }
+
+    .value {
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Helvetica,
+        Arial,
+        sans-serif;
+
+      font-size: 18px;
+      font-weight: 700;
+      fill: #ffffff;
+    }
+
+    .label {
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Helvetica,
+        Arial,
+        sans-serif;
+
+      font-size: 10px;
+      fill: #8b949e;
+    }
+
+  </style>
+
+  <rect
+    width="520"
+    height="118"
+    rx="3"
+    fill="#000000"
+  />
+
+  <text
+    x="18"
+    y="25"
+    class="title"
+  >
+    GitHub Stats
+  </text>
+
+  
+        <g transform="translate(100, 0)">
+
+          <text
+            x="0"
+            y="53"
+            text-anchor="middle"
+            class="icon"
+          >
+            ★
+          </text>
+
+          <text
+            x="0"
+            y="76"
+            text-anchor="middle"
+            class="value"
+          >
+            7
+          </text>
+
+          <text
+            x="0"
+            y="95"
+            text-anchor="middle"
+            class="label"
+          >
+            Stars
+          </text>
+
+        </g>
+      
+        <g transform="translate(260, 0)">
+
+          <text
+            x="0"
+            y="53"
+            text-anchor="middle"
+            class="icon"
+          >
+            ⌁
+          </text>
+
+          <text
+            x="0"
+            y="76"
+            text-anchor="middle"
+            class="value"
+          >
+            129
+          </text>
+
+          <text
+            x="0"
+            y="95"
+            text-anchor="middle"
+            class="label"
+          >
+            Commits
+          </text>
+
+        </g>
+      
+        <g transform="translate(420, 0)">
+
+          <text
+            x="0"
+            y="53"
+            text-anchor="middle"
+            class="icon"
+          >
+            ▣
+          </text>
+
+          <text
+            x="0"
+            y="76"
+            text-anchor="middle"
+            class="value"
+          >
+            16
+          </text>
+
+          <text
+            x="0"
+            y="95"
+            text-anchor="middle"
+            class="label"
+          >
+            Repositories
+          </text>
+
+        </g>
+      
+
+</svg>
