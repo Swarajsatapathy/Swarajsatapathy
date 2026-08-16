@@ -55,31 +55,39 @@ I enjoy building applications that solve practical problems while learning how m
 ### Languages
 
 <p>
-  <img src="https://skillicons.dev/icons?i=java,cpp,c,python,js,ts" alt="Programming Languages" />
+  <img src="https://img.shields.io/badge/JAVA-000000?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
+  <img src="https://img.shields.io/badge/C++-000000?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++" />
+  <img src="https://img.shields.io/badge/C-000000?style=for-the-badge&logo=c&logoColor=white" alt="C" />
+  <img src="https://img.shields.io/badge/PYTHON-000000?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/JAVASCRIPT-000000?style=for-the-badge&logo=javascript&logoColor=white" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/TYPESCRIPT-000000?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
 </p>
 
-### Frontend
+### Frameworks & Libraries
 
 <p>
-  <img src="https://skillicons.dev/icons?i=html,css,react,nextjs,tailwind" alt="Frontend Technologies" />
-</p>
-
-### Backend
-
-<p>
-  <img src="https://skillicons.dev/icons?i=nodejs,express" alt="Backend Technologies" />
+  <img src="https://img.shields.io/badge/REACT-000000?style=for-the-badge&logo=react&logoColor=white" alt="React" />
+  <img src="https://img.shields.io/badge/NEXT.JS-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
+  <img src="https://img.shields.io/badge/NODE.JS-000000?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
+  <img src="https://img.shields.io/badge/EXPRESS-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express" />
+  <img src="https://img.shields.io/badge/TAILWIND-000000?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
 </p>
 
 ### Databases
 
 <p>
-  <img src="https://skillicons.dev/icons?i=mongodb,mysql" alt="Databases" />
+  <img src="https://img.shields.io/badge/MONGODB-000000?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
+  <img src="https://img.shields.io/badge/MYSQL-000000?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
 </p>
 
-### Cloud & DevOps
+### Tools & Cloud
 
 <p>
-  <img src="https://skillicons.dev/icons?i=aws,docker,linux,git,github" alt="Cloud and DevOps" />
+  <img src="https://img.shields.io/badge/DOCKER-000000?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
+  <img src="https://img.shields.io/badge/GIT-000000?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
+  <img src="https://img.shields.io/badge/LINUX-000000?style=for-the-badge&logo=linux&logoColor=white" alt="Linux" />
+  <img src="https://img.shields.io/badge/AWS-000000?style=for-the-badge&logo=amazonwebservices&logoColor=white" alt="AWS" />
+  <img src="https://img.shields.io/badge/GITHUB-000000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
 </p>
 
 ---
