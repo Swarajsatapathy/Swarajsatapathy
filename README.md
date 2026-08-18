@@ -195,7 +195,7 @@ A full-stack digital news platform with article publishing, video news, reporter
 <p align="center">
   <img
     width="100%"
-    src="https://github-readme-activity-graph.vercel.app/graph?username=Swarajsatapathy&bg_color=000000&color=ffffff&title_color=ffffff&line=ffffff&point=ffffff&area=true&area_color=30363d&hide_border=true&radius=0&height=300&days=31&custom_title=Swaraj%20Satapathy%27s%20Contribution%20Graph"
+    src="https://github-readme-activity-graph.vercel.app/graph?username=Swarajsatapathy&bg_color=000000&color=9c9c9c&line=c2c2c2&point=4754ff&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph"
     alt="Swaraj Satapathy Contribution Graph"
   />
 </p>
